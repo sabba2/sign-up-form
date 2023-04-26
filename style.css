@@ -21,4 +21,7 @@
 .form-container {
   width: 67%;
   height: 100%;
+  background-color: #f0f1ec;
+  display: flex;
+  flex-direction: column;
 }
