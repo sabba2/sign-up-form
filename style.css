@@ -29,6 +29,7 @@
 
 .user-info {
   background-color: #afaa9d;
+  padding: 20px 0;
 }
 
 .abstract {
@@ -40,4 +41,40 @@
 
 .button-section {
   padding: 50px 10% 0 10%;
+}
+
+.form-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 20px 10%;
+}
+
+label {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.form-row {
+  display: flex;
+  padding: 20px 10%;
+}
+.form-row input {
+  width: 100%;
+}
+
+.form-control {
+  width: 50%;
+  margin-right: 5%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  background-color: #ffffff;
+  border: 1px solid #979394;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
 }
