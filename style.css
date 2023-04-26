@@ -1,4 +1,9 @@
 /* not yet styled for Mobile */
+@font-face {
+  font-family: Norse;
+  src: url(fonts/Norse-Bold.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +16,7 @@
 }
 
 .bg-container {
+  position: relative;
   width: 33%;
   height: 100%;
   background-image: url(img/background.resized.jpg);
@@ -110,4 +116,29 @@ input[type="submit"] {
 
 .button-section button:hover {
   cursor: pointer;
+}
+
+.banner {
+  position: absolute;
+  width: 100%;
+  background-color: black;
+  height: 200px;
+  opacity: 0.5;
+  top: 225px;
+  font-family: Norse, Consolas, monaco, monospace;
+  font-size: 10rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.banner > p {
+  color: #f0f1ec;
+}
+
+.banner > img {
+  height: 150px;
+  width: auto;
 }
