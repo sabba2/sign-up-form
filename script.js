@@ -13,6 +13,28 @@ function toggleError(element) {
   if (element.classList.contains("error")) {
     element.classList.remove("error");
   } else {
-    element.classList.append("error");
+    element.classList.add("error");
   }
 }
+
+function comparePass(password, confirmPassword) {
+  if (
+    password.value !== confirmPassword.value &&
+    !password.classList.contains("error")
+  ) {
+    toggleError(password);
+    toggleError(confirmPassword);
+  } else if (
+    password.value === confirmPassword.value &&
+    password.classList.contains("error")
+  ) {
+    toggleError(password);
+    toggleError(confirmPassword);
+  }
+}
+password.addEventListener("focusout", () => {
+  comparePass(password, confirmPassword);
+});
+confirmPassword.addEventListener("focusout", () => {
+  comparePass(password, confirmPassword);
+});
