@@ -24,4 +24,20 @@
   background-color: #f0f1ec;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+.user-info {
+  background-color: #afaa9d;
+}
+
+.abstract {
+  padding: 0 10% 50px 10%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.button-section {
+  padding: 50px 10% 0 10%;
 }
