@@ -22,7 +22,7 @@
   background-image: url(img/background.resized.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
 }
 
 .form-container {
@@ -36,7 +36,7 @@
 
 .user-info {
   background-color: #afaa9d;
-  padding: 20px 0;
+  padding: 25px 0;
   margin: 60px 0;
   box-shadow: #413627 0px 5px 15px;
   clip-path: inset(0px 0px -15px 0px);
@@ -159,4 +159,16 @@ input[type="submit"] {
 .banner > img {
   height: 120px;
   width: auto;
+}
+
+.pass-wrapper {
+  position: relative;
+}
+
+.pass-wrapper::after {
+  position: absolute;
+  display: block;
+  content: "* Passwords do not match";
+  font-size: 0.9rem;
+  color: rgb(255, 20, 20);
 }
