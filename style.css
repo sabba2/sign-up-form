@@ -37,7 +37,7 @@
 .user-info {
   background-color: #afaa9d;
   padding: 20px 0;
-  margin: 70px 0;
+  margin: 60px 0;
   box-shadow: #413627 0px 5px 15px;
   clip-path: inset(0px 0px -15px 0px);
 }
@@ -45,7 +45,7 @@
 .abstract {
   margin: 0 5% 0 5%;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #413627;
 }
@@ -55,7 +55,7 @@
 }
 
 .form-heading {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   font-weight: 600;
   font-family: Consolas, monaco, monospace;
   padding: 20px 5%;
@@ -63,11 +63,12 @@
 
 label {
   font-family: Consolas, monaco, monospace;
+  font-size: 0.8rem;
 }
 
 .form-row {
   display: flex;
-  padding: 20px 5%;
+  padding: 10px 5%;
 }
 .form-row input {
   width: 100%;
@@ -87,7 +88,8 @@ input[type="password"] {
   border-radius: 5px;
   width: 100%;
   padding: 7px;
-  font-size: 1.3rem;
+  height: 30px;
+  font-size: 1rem;
 }
 
 input[type="text"]:focus,
@@ -106,7 +108,7 @@ input[type="password"]:focus {
 }
 
 input[type="submit"] {
-  font-size: 1.5em;
+  font-size: 1.25rem;
   padding: 15px 50px;
   margin-bottom: 35px;
   background-color: #413627;
@@ -120,7 +122,7 @@ input[type="submit"] {
   background: none;
   border: none;
   font-family: helvetica, arial, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #413627;
   font-weight: 900;
 }
@@ -137,16 +139,15 @@ input[type="submit"] {
   position: absolute;
   width: 100%;
   background-color: black;
-  height: 200px;
+  height: 150px;
   opacity: 0.5;
-  top: 225px;
+  top: 18vh;
   font-family: Norse, Consolas, monaco, monospace;
-  font-size: 10rem;
+  font-size: 7rem;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-
   gap: 30px;
 }
 
@@ -156,6 +157,6 @@ input[type="submit"] {
 }
 
 .banner > img {
-  height: 150px;
+  height: 120px;
   width: auto;
 }
