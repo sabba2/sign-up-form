@@ -28,7 +28,7 @@
           </p>
         </div>
 
-        <form method="get" name="sign-up-form">
+        <form action="" method="get" name="sign-up-form">
           <div class="user-info">
             <div class="form-heading form-row">
               <p>Let's do this!</p>
@@ -48,7 +48,13 @@
             <div class="form-row">
               <div class="form-control">
                 <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email" />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="eg. john.doe@gmail.com"
+                  required
+                />
               </div>
 
               <div class="form-control">
@@ -58,13 +64,14 @@
             </div>
 
             <div class="form-row">
-              <div class="form-control">
+              <div class="form-control pass-wrapper">
                 <label for="password">PASSWORD</label>
                 <input
                   type="password"
                   name="password"
                   id="password"
                   class="error"
+                  required
                 />
               </div>
 
@@ -75,6 +82,7 @@
                   name="is-confirmed"
                   id="confirm-password"
                   class="error"
+                  required
                 />
               </div>
             </div>
@@ -82,11 +90,13 @@
 
           <div class="button-section">
             <div>
-              <input class="login" type="submit" value="Create Account" />
+              <input type="submit" value="Create Account" />
             </div>
 
             <div>
-              <p>Already have an account? <button>Log In</button></p>
+              <p>
+                Already have an account? <button class="login">Log In</button>
+              </p>
             </div>
           </div>
         </form>
